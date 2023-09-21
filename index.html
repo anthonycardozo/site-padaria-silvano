@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="shortcut icon" type="imagex/png" href="/silvano1.png">
+    <title>Padaria Silvano</title>
+
+
+    <script src="https://kit.fontawesome.com/45d92814ed.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <!-- TOP BAR-->
+    <nav class="top-bar">
+        <div class="logo">
+            <a href="#">
+                <img src="/silvano1.png">
+            </a>
+        </div>
+        <ul class="nav-links">
+           <li class="link"><a href="https://api.whatsapp.com/send?phone=5548991106451&text=Ol%C3%A1,%20gostaria%20de%20fazer%20uma%20encomenda" target="_blank">Encomenda</a></li> 
+           <li class="link"><a href="#location">Localização</a></li> 
+           <li class="link"><a href="#contact">Contato</a></li> 
+           <li class="link"><a href="#working">Trabalhe Conosco</a></li>
+        </ul>
+        <div class="social-media-icons">
+            <a href="https://www.instagram.com/padariasilvano/" target="_blank"><i class="fa-brands fa-instagram fa-xl" style="color: #1d7623;"></i></a>
+            <a href="https://www.facebook.com/padariasilvano" target="_blank"><i class="fa-brands fa-facebook fa-xl" style="color: #1d7623;"></i></a>
+        </div>
+    </nav>
+
+    <!-- SOBRE NÓS -->
+    <header class="container" id="sobrenos">
+        <div class="content">
+            <h3 class="p">Padaria Silvano</h3> <h3 class="m">Mais de <span>45</span> Anos de Tradição e Sabor</h3>
+            <p>
+                Desde a sua inauguração, a padaria tem se dedicado a oferecer aos seus clientes e amigos o melhor que termos de sabor, frescor e variedade.
+            </p>
+            <p>
+                Além dos pães tradicionais, a Padaria Silvano é conhecida por sua vasta gama de produtos. Desde croissants macios e folhados até bolos decorados para ocasiões especiais, há algo para todos os gostos. Os salgados são perfeitos para um lanche rápido ou um café da manhã reforçado. E, é claro, não podemos esquecer das deliciosas sobremesas que conquistam os paladares mais exigentes.
+            </p>
+        </div>
+        <div class="image">
+            <img src="/104_506758635.jpg">
+        </div>
+    </header>
+
+    <!--LOCALIZAÇÃO-->
+    <section class="location" id="location">
+        <div class="img-loc">
+            <a href="https://www.google.com/maps/place/Mercearia+e+Lanchonete+Silvano/@-28.6864589,-49.3838702,15z/data=!4m6!3m5!1s0x952182603988470d:0x6099e16464b0ccb3!8m2!3d-28.6864589!4d-49.3838702!16s%2Fg%2F1tfn3xrs?entry=ttu" target="_blank"><img src="/loc.png"></a>
+        </div>
+        <div class="loc">
+            <h3>Nossa Localização</h3>
+            <p>R. Henrique Lage, 1743 Santa Barbara</p>
+            <p>Criciúma - SC, 88804-010</p>
+            <p class="a">
+                Abertos de Seg. à Sab.
+                dàs <span>06:00</span> às <span>20:00</span>
+            </p>
+        </div>
+    </section>
+
+    <!--CONTATOS-->
+    <section class="contact" id="contact">
+        <h3 class="header">CONTATOS</h3>
+        <div class="features">
+            <div class="card">
+                <span><i class="fa-brands fa-whatsapp fa-2xl"></i></span>
+                <h3>Whatsapp</h3>
+                <p>(48) 99110-6451</p>
+                <a href="https://api.whatsapp.com/send?phone=5548991106451&text=Ol%C3%A1,%20gostaria%20de%20fazer%20uma%20encomenda" target="_blank">Enviar Mensagem<i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+            <div class="card">
+                <span><i class="fa-solid fa-phone fa-xl"></i></span>
+                <h3>Telefone</h3>
+                <p>(48) 3433-6451</p>
+                <a href="tel:+554834336451">Ligar<i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </section>
+    <div class="img-contact">
+        <img src="/c.png">
+    </div>
+
+    <!--TRABALHE CONOSCO-->
+    <section class="working" id="working">
+        <div class="work">
+            <h3 class="title_contact">Trabalhe Conosco</h3>
+            <form method="post" action="form.php" name="form">
+                <div class="style-form-input full">
+                    <input type="text" name="nome" placeholder="Seu nome" required/>
+                </div>
+                
+                <div class="style-form-input full">
+                    <input type="text" name="telefone" placeholder="Seu Telefone" required/>
+                </div>
+                
+                <div class="style-form-input full">
+                    <input type="text" name="email" placeholder="Seu Email" required/>
+                </div>
+                
+                <div class="style-form-input full">
+                    <input type="text" name="interesse" placeholder="Área de Interesse" required/>
+                </div>
+                
+                <div class="style-form-input full">
+                    <textarea  name="mensagem" placeholder="Fale Sobre Você" required></textarea>
+                </div>
+                
+                <div class="style-form-input full">
+                    <input type="hidden" name="acao" value="enviar">
+                    <button class="btn-submit">Enviar</button>
+                </div>
+            </form>
+        </div>
+        <div class="image">
+            <img src="/trabalhe.jpg">
+        </div>
+    </section>
+</body>
+</html>
