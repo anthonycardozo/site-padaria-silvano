@@ -164,7 +164,11 @@ section .img-loc img{
 .contact{
     max-width: 1200px;
     margin: auto;
-    padding: 4rem 0.5rem;
+    padding: 4rem 0.5rem;  
+}
+
+section .features{
+    background-image: url(/c.png);
 }
 
 section .header{
@@ -175,6 +179,7 @@ section .header{
 }
 
 .features {
+    padding: 1.5rem;
     margin-top: 4rem;
     display: grid;
     grid-template-columns: 1fr 1fr 2fr;
@@ -220,14 +225,6 @@ section .header{
 
 .features .card a:hover{
     color: #137623;
-}
-
-.img-contact {
-    position: absolute;
-    max-width: auto;
-    max-height: 500px;
-    top: 1155px;
-    z-index: -100;
 }
 
 .working{
@@ -288,14 +285,14 @@ input:focus ~ label, textarea:focus ~ label, input:valid ~ label, textarea:valid
     pointer-events: none;
 }
 
-.style-form-input.full { 
-    width: 600px;
+.style-form-input .full { 
+    width: 500px;
     max-width: 100%;
 }
 
 input,
 textarea {
-    width: 600px;
+    width: 500px;
     padding: 0.5rem;
     border: 0;
     font-size: 1em;
@@ -314,7 +311,7 @@ textarea:focus ~ span {
 }
 
 textarea {
-    width: 600px;
+    width: 500px;
     min-height: 3em;
 }
 
@@ -376,3 +373,73 @@ section .image img{
     max-width: 650px;
     margin: auto;
 } 
+
+@media screen and (max-device-width: 768px) {
+
+    .main {
+        margin: 2em 2em;
+    }
+
+    nav {
+        display: block;
+        margin: auto;
+        padding: 2rem 1rem;
+        text-align: center;
+    }
+
+    .logo img{
+        margin: 0 50%;
+    }
+
+    .nav-links{
+        list-style: none;
+        display: block;
+        margin-top: 2rem;
+    }
+
+    .social-media-icons{
+        margin-top: 2rem;
+        gap: 5rem;
+    }
+    
+    .container{
+        display: block;
+        justify-content: center;
+        padding: 2rem 2rem;
+    }
+
+    .location{
+        display: block;
+        padding: 2rem 2rem;
+    }
+
+    .location h3{
+        margin-top: 1rem;
+    }
+
+    .contact{
+        display: block;
+        padding: 2rem 2rem;
+    }
+
+    .features {
+        display: block;
+        justify-content: center;
+        margin-top: 1rem;
+    }
+
+    .working{
+        display: block;
+        justify-content: center;
+        padding: 1rem 2rem;
+    }
+    
+    .card{
+        margin-top: 2rem;
+    }
+
+    input, textarea {
+        width: 68vw;
+    }
+
+}
