@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/styles/style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="shortcut icon" type="imagex/png" href="/silvano1.png">
+    <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDLHMUzAalVvVDrPTzsLjZ6iaLPPdxUxy4&callback=console.debug&libraries=maps,marker&v=beta"></script>
     <title>Padaria Silvano</title>
 
 
@@ -16,13 +17,13 @@
     <!-- TOP BAR-->
     <nav class="top-bar">
         <div class="logo">
-            <a href="#">
+            <a href="index.html">
                 <img src="/silvano1.png">
             </a>
         </div>
         <ul class="nav-links">
            <li class="link"><a href="https://api.whatsapp.com/send?phone=5548991106451&text=Ol%C3%A1,%20gostaria%20de%20fazer%20uma%20encomenda" target="_blank">Encomenda</a></li> 
-           <li class="link"><a href="#location">Localização</a></li> 
+           <li class="link"><a href="produtos.html">Produtos</a></li> 
            <li class="link"><a href="#contact">Contato</a></li> 
            <li class="link"><a href="#working">Trabalhe Conosco</a></li>
         </ul>
@@ -50,9 +51,10 @@
 
     <!--LOCALIZAÇÃO-->
     <section class="location" id="location">
-        <div class="img-loc">
-            <a href="https://www.google.com/maps/place/Mercearia+e+Lanchonete+Silvano/@-28.6864589,-49.3838702,15z/data=!4m6!3m5!1s0x952182603988470d:0x6099e16464b0ccb3!8m2!3d-28.6864589!4d-49.3838702!16s%2Fg%2F1tfn3xrs?entry=ttu" target="_blank"><img src="/loc.png"></a>
-        </div>
+        <gmp-map center="-28.686458587646484,-49.38385772705078" zoom="14" map-id="DEMO_MAP_ID">
+            <gmp-advanced-marker position="-28.686458587646484,-49.38385772705078" title="My location">
+            </gmp-advanced-marker>
+        </gmp-map>
         <div class="loc">
             <h3>Nossa Localização</h3>
             <p>R. Henrique Lage, 1743 Santa Barbara</p>

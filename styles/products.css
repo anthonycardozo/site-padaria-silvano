@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+}
+
+img{
+    width: 100%;
+    display: flex;
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #f5f5f5;
+}
+
+nav{
+    max-width: 1200px;
+    margin: auto;
+    padding: 2rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.logo{
+    max-width: 150px;
+}
+
+.nav-links{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+.link a{
+    position: relative;
+    padding-bottom: 0.75rem;
+    color: #1e1e1e;
+}
+
+.link a::after{
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #137623;
+    transition: all 0.3s ease;
+}
+
+.link a:hover::after{
+    width: 80%;
+}
+
+.fa-brands {
+    width: 2.5rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    position: relative;
+}
+
+.cards {
+    max-width: 1200px;
+    margin: auto;
+    padding: 1.5rem;
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 5rem;
+}
+
+.cards .card{
+    background-color: #ffff;
+    padding: 1rem;
+    border: 2px solid transparent;
+    border-radius: 32px;
+    transition: all 0.3s ease;
+    height: 20rem;
+    text-align: center;
+}
+
+.cards .card:hover{
+    background-color: #fafafa;
+    border-color: #137623;
+    cursor: pointer;
+}
+
+.cards h3{
+    color: #ffff;
+    margin-top: 85%;
+    -webkit-text-stroke: 0.5px #137623;
+    font-size: 1.5rem;
+}
+
+section .salgados{
+    background-image: url(/pastel.jpg);
+    background-size: 100%;
+}
+
+section .salgados_finos{
+    background-image: url(/pastel.jpg);
+    background-size: 100%;
+}
+
+section .salgadinhos{
+    background-image: url(/pastel.jpg);
+    background-size: 100%;
+}
+
+section .tortas{
+    background-image: url(/pastel.jpg);
+    background-size: 100%;
+}
+
+section .bolos{
+    background-image: url(/pastel.jpg);
+    background-size: 100%;
+}
+
+section .docinhos{
+    background-image: url(/pastel.jpg);
+    background-size: 100%;
+}
+
+section .paes{
+    background-image: url(/pastel.jpg);
+    background-size: 100%;
+}
+
+section .cucas{
+    background-image: url(/pastel.jpg);
+    background-size: 100%;
+}
+
+section .roscas{
+    background-image: url(/pastel.jpg);
+    background-size: 100%;
+}
+
+@media screen and (max-device-width: 768px) {
+
+    .main {
+        margin: 2em 2em;
+    }
+
+    nav {
+        display: block;
+        margin: auto;
+        padding: 2rem 1rem;
+        text-align: center;
+    }
+
+    .logo img{
+        margin: 0 50%;
+    }
+
+    .nav-links{
+        list-style: none;
+        display: block;
+        margin-top: 2rem;
+    }
+
+    .social-media-icons{
+        margin-top: 2rem;
+        gap: 5rem;
+    }
+    
+    .cards {
+        display: block;
+        justify-content: center;
+        margin-top: 1rem;
+    }
+
+    .card{
+        margin-top: 2rem;
+    }
+}
